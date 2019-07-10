@@ -1,0 +1,255 @@
+body{
+	background-image: url("images/wallpaper.jpg");
+	background-size: cover;
+	min-height:100vh;
+}
+
+header{
+	background-color: white;
+	text-align: center;
+	width: 150px;
+	height: 40px;
+	margin: 0 auto;
+	margin-top: 40px;
+	line-height: 40px;
+	border-radius: 2px;
+}
+
+.instructions{
+	background-color: white;
+  text-align: center;
+  width: 670px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 40px;
+  line-height: 40px;
+  border-radius: 2px;
+}
+
+.ingredients{
+	/*border: solid 1px white;*/
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.fooddiv{
+	/*border: solid 1px white;*/
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#apple{
+
+}
+#durian{
+
+}
+#meat{
+
+}
+
+.cookingpot{
+	/*border: solid 1px white;*/
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*@import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
+
+$btn-width: 250px !default;
+$btn-height: 80px !default;
+$btn-full: $btn-height+$btn-width !default;
+$btn-half: $btn-full/2 !default;
+$bg-color: #eeeeee !default;
+
+html {
+  padding-top: 50px;
+  font-family: 'Open Sans', Helvetica, arial, sans-serif;
+  text-align: center;
+  background-color: $bg-color;
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+    transition: 0.5s ease-in-out;
+  }
+
+  i,em,
+  b,strong,
+  span {
+    transition: none;
+  }
+}
+
+*:before,
+*:after {
+  z-index: -1;
+}
+
+a {
+  text-decoration: none;
+  line-height: $btn-height;
+  color: black;
+}
+
+[class^="btn-"] {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  @include size(100%, $btn-height);
+  max-width: $btn-width;
+  margin: 1rem auto;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}*/
+
+/*.button {
+  $btn-color: random-color($max:200);
+  $btn-color-dark: shade($btn-color, 40%);
+  color: tint($btn-color);
+
+  &:before,
+  &:after {
+    content: '';
+    @include absolute(0,0,0,0);
+    border-bottom: $btn-height solid $btn-color-dark;
+  }
+
+  &:before {
+    right: -50px;
+    border-right: 50px solid transparent;
+    transform: translateX(-100%);
+  }
+
+  &:after {
+    left: -50px;
+    border-left: 50px solid transparent;
+    transform: translateX(100%);
+  }
+
+  &:hover {
+    color: tint($btn-color, 75%);
+
+    &:before { transform: translateX(-40%); }
+    &:after { transform: translateX(40%); }
+  }
+}*/
+
+#button{
+	display: block;
+	position: absolute;
+  left: 40%;
+  top: 70%;
+	margin: 0 auto;
+	width: 20%;
+	height: 5%;
+}
+
+/*@media (min-width: 600px) {
+  div {
+    float: left;
+    /*width: calc((100% - 50px) / 5);*/
+/*  }
+.icon-list{
+	border: solid 1px white;
+	position:absolute;
+	display: flex;
+	flex-direction: column;
+	right: 10%;
+  top: 7%;
+	margin: 0 auto;
+}**/
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.anyImage{vertical-align: middle;
+    border-style: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* Add Animation - Zoom in the Modal */
+#popupmodal, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .apple3 {
+    width: 100%;
+  }
+}

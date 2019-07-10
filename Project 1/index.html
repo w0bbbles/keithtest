@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Project Uno</title>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="maincontainer">
+
+        <header>Iron Chef Hyrule</header>
+
+        <div class="instructions">Pick three ingredients to see what you've created by clicking on the cooking pot after!</div>
+
+        //list of ingredients
+
+        <div class="ingredients">
+            <div class="row justify-content-md-center">
+                <div class="col-md-auto">
+                    <img src="images/apple.png" width="100" height="100" id="apple">
+                    <img src="images/durian.png" width="100" height="100" id="durian">
+                    <img src="images/rawprimemeat.png" width="100" height="100" id="meat">
+                </div>
+            </div>
+        </div>
+
+        <div class="fooddiv">
+            <!-- <div class="row justify-content-md-center"> -->
+                <div class="col-md-auto">
+                    <img width="100" height="100" id="foodarea1">
+                </div>
+
+                <div class="col-md-auto">
+                    <img width="100" height="100" id="foodarea2">
+                </div>
+
+                <div class="col-md-auto">
+                    <img width="100" height="100" id="foodarea3">
+                </div>
+            </div>
+        </div>
+
+        <div class="cookingpot">
+            <div class="row justify-content-md-center">
+                <div class="col-md-auto">
+                    <img src="images/cookingpot.png" width="400" height="400" id="pot">
+                </div>
+            </div>
+        </div>
+
+
+       <!--  <div class="icon-list"> -->
+  <!-- heart -->
+            <!-- <div class="nes-icon is-large heart"></div>
+            <div class="nes-icon is-large heart"></div>
+            <div class="nes-icon is-large heart"></div>
+            <div class="nes-icon is-large heart"></div>
+            <div class="nes-icon is-large heart"></div>
+            <div class="nes-icon is-large heart"></div>
+            <div class="nes-icon is-large heart"></div>
+            <div class="nes-icon is-large heart"></div>
+            <div class="nes-icon is-large heart"></div>
+            <div class="nes-icon is-large heart is-empty"></div>
+        </div> -->
+
+
+      <!-- The Modal -->
+      <div id="popupmodal" class="modal">
+          <!-- The Close Button -->
+          <span class="close">&times;</span>
+          <!-- Modal Content (The Image) -->
+          <img class="anyImage" id="apple3">
+          <!-- Modal Caption (Image Text) -->
+          <div id="caption"></div>
+          <!-- Reset Button -->
+          <!-- <a class="button" input type="button" onclick="location.reload()" href="#">Diagonal Swipe</a> -->
+          <input type="button" class="w3-button w3-white" onclick="location.reload()" value="Next Recipe" id="button">
+      </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
